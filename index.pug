@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Dashboard
+    link(rel="stylesheet" href="styles/main.css")
+  body
+    // Sidebar
+    .sidebar
+      .sidebar__header Dashboard
+      nav.sidebar__menu
+        a.sidebar__item(href="#") Dashboard
+        a.sidebar__item(href="#") Product
+        a.sidebar__item.sidebar__item--active(href="#") Customers
+        a.sidebar__item(href="#") Income
+        a.sidebar__item(href="#") Promote
+        a.sidebar__item(href="#") Help
+      .sidebar__footer
+        img(src="sd\image.png" alt="Profile picture")
+        .sidebar__profile-info
+          .profile__name Evano
+          .profile__role Project Manager
+
+    // Main Content
+    .main-content
+      header.header
+        h1 Hello Evano 👋,
+      
+      // Customer Table
+      section.table-section
+        h2 All Customers
+        .table-controls 
+          p.table-section__subtitle Active Members
+          input.table-search(type="text" placeholder="Search")
+        table.table
+          thead
+            tr
+              th Customer Name
+              th Company
+              th Phone Number
+              th Email
+              th Country
+              th Status
+          tbody
+            tr
+              td Jane Cooper
+              td Microsoft
+              td (225) 555-0118
+              td jane@microsoft.com
+              td United States
+              td.status--active Active
+            tr
+              td Floyd Miles
+              td Yahoo
+              td (205) 555-0100
+              td floyd@yahoo.com
+              td Kiribati
+              td.status--inactive Inactive
+            tr 
+              td Ronald Richards 
+              td Adobe 
+              td (302) 555-0107
+              td ronald@adode.com
+              td Israel 
+              td.status--inactive Inactive
+            tr
+              td Marvin McKinney
+              td Tesla 
+              td (252) 555-0126
+              td marvin@tesla.com
+              td Iran
+              td.status--active Active
+            tr
+              td Jerome Bell
+              td Google
+              td (629) 555-0129
+              td jeromy@google.com
+              td Reunion
+              td.status--active Active
+            tr
+              td Kathryn Murphy
+              td Microsoft
+              td (406) 555-0120
+              td kathryn@microsoft.com
+              td Curacao
+              td.status--active Active
+
+        // Pagination
+        .pagination
+          a.pagination__link(href="#") <
+          a.pagination__link(href="#") 1
+          a.pagination__link(href="#") 2
+          a.pagination__link(href="#") 3
+          a.pagination__link(href="#") 4
+          a.pagination__link(href="#") ...
+          a.pagination__link(href="#") 40
+          a.pagination__link(href="#") >
+          
+
+    script(src="scripts\animations.js")

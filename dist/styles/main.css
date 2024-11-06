@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.sidebar {
+  position: fixed;
+  width: 180px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+.sidebar__header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__menu .sidebar__item {
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+.sidebar__menu .sidebar__item--active {
+  color: #6200ea;
+  font-weight: bold;
+}
+.sidebar__menu .sidebar__item:hover {
+  color: #6200ea;
+}
+.sidebar__footer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.sidebar__footer .sidebar__profile-info {
+  margin-left: 10px;
+}
+.sidebar__footer .sidebar__profile-info .profile__name {
+  font-weight: bold;
+}
+.sidebar__footer .sidebar__profile-info .profile__role {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 0.5em;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+}
+.table thead {
+  background-color: #f1f1f1;
+}
+.table .status--active {
+  color: #28a745;
+  font-weight: bold;
+}
+.table .status--inactive {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+.pagination .pagination__link {
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+.pagination .pagination__link:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.table-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределяет элементы по краям */
+  margin-bottom: 20px;
+}
+
+.table-section__subtitle {
+  color: #28a745;
+  margin-right: 20px; /* Отступ справа от подзаголовка */
+}
+
+.table-search {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

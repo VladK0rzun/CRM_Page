@@ -1,0 +1,41 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  
+    thead {
+      background-color: #f1f1f1;
+    }
+  
+    .status--active {
+      color: #28a745;
+      font-weight: bold;
+    }
+  
+    .status--inactive {
+      color: #dc3545;
+      font-weight: bold;
+    }
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+  
+    .pagination__link {
+      padding: 10px 15px;
+      color: #333;
+      text-decoration: none;
+  
+      &:hover {
+        background-color: #f1f1f1;
+        border-radius: 5px;
+      }
+    }
+  }

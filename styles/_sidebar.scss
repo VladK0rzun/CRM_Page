@@ -1,0 +1,55 @@
+.sidebar {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+  
+    &__header {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    &__menu {
+      display: flex;
+      flex-direction: column;
+  
+      .sidebar__item {
+        padding: 10px 0;
+        color: #333;
+        text-decoration: none;
+  
+        &--active {
+          color: #6200ea;
+          font-weight: bold;
+        }
+  
+        &:hover {
+          color: #6200ea;
+        }
+      }
+    }
+  
+    &__footer {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      align-items: center;
+  
+      .sidebar__profile-info {
+        margin-left: 10px;
+  
+        .profile__name {
+          font-weight: bold;
+        }
+  
+        .profile__role {
+          font-size: 0.9em;
+          color: #666;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,40 @@
+@use 'sidebar';
+@use 'header';
+@use 'table';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.table-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределяет элементы по краям */
+  margin-bottom: 20px;
+}
+
+.table-section__subtitle {
+  color: #28a745;
+  margin-right: 20px; /* Отступ справа от подзаголовка */
+}
+
+.table-search {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
